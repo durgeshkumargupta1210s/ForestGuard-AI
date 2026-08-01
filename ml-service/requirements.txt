@@ -1,0 +1,16 @@
+# ForestGuard ML service dependencies (Python 3.13)
+#
+# This file is UTF-8. It was previously saved as UTF-16, which pip cannot
+# parse at all -- `pip install -r requirements.txt` failed on line 1.
+#
+# Only packages that are actually imported are listed. The old file pinned
+# a Flask stack (Flask, Werkzeug, Jinja2, itsdangerous, blinker, click,
+# MarkupSafe, colorama) that nothing imports, and omitted joblib even
+# though models/model_loader.py imports it.
+
+fastapi==0.115.14
+uvicorn==0.34.3
+pydantic==2.11.7
+numpy==2.2.6
+scikit-learn==1.6.1
+joblib==1.5.1
