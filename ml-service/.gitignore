@@ -1,35 +1,20 @@
-# Dependencies
-node_modules/
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyw
 
-# Environment variables
+# Virtual environment
+venv/
+env/
 .env
 .env.local
-.env.development.local
-.env.test.local
-.env.production.local
 
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
+# Jupyter
+.ipynb_checkpoints/
 
-# Runtime files
-pids
-*.pid
-*.seed
-*.pid.lock
-
-# Coverage
-coverage/
-
-# Build
-dist/
-build/
-
-# OS files
+# OS
 .DS_Store
 Thumbs.db
 
@@ -37,12 +22,12 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Temporary files
+# Logs
+*.log
+
+# Temp
 *.tmp
 *.temp
 
-# Cache
-.cache/
-
-# Optional
-uploads/
+# NOTE: .joblib model files are intentionally NOT ignored
+# They must be committed so Render can load the trained model
