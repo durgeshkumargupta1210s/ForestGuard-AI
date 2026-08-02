@@ -1,10 +1,9 @@
 # ForestGuard ML service dependencies
-# Pinned to versions with pre-built binary wheels for fast cloud deployment
-# --prefer-binary ensures pip downloads wheels instead of building from source
+# Compatible with Python 3.11 (pre-built cp311 wheels available for all packages)
 
 fastapi==0.115.5
 uvicorn[standard]==0.32.1
 pydantic==2.10.3
 numpy==1.26.4
-scikit-learn==1.4.2
+scikit-learn==1.5.2
 joblib==1.4.2
